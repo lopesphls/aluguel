@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/ofertas", (req, res) => {
+  res.render("ofertas+");
+});
+
 app.listen(port, () => {
   console.clear();
   console.log("servidor rodando");

@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./public/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/index.style.css" />
+    <link rel="stylesheet" href="./public/css/navbar.style.css" />
+    <title>Aluguel - index</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="#">Brand</a>
+        <a class="brand">Brand</a>
         <div class="hamburguer">
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Signin</a></li>
           </ul>
@@ -22,13 +23,10 @@
       </nav>
     </header>
     <main id="index">
-      <video
-        class="video"
-        autoplay
-        autostart
-        loop
-        src="./public/video/Driving a Mercedes.mp4"
-      ></video>
+      <video class="video" autoplay autostart muted loop>
+        <source src="./public/video/Driving.mp4" type="video/mp4" />
+      </video>
     </main>
+    <script src="./public/js/script.js"></script>
   </body>
 </html>
