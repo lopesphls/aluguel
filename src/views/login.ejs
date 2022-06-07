@@ -1,1 +1,13 @@
-<% include('partial/header') %> <% include('partial/footer') %>
+<%- include('partial/header') %>
+<main id="login">
+  <div class="box-login">
+    <form action="/login" method="post">
+      <label for="">Email: </label>
+      <input type="email" name="email" id="" required />
+      <label for="">Senha: </label>
+      <input type="password" name="password" id="" required />
+      <input type="button" value="Cadastrar" class="btn-submit" />
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>
