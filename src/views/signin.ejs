@@ -1,0 +1,17 @@
+<%- include('partial/header') %>
+<main id="login">
+  <div class="box-login">
+    <form action="/cadastro" method="post">
+      <label for="">Nome: </label>
+      <input type="text" name="nome" required />
+      <label for="">Email: </label>
+      <input type="email" name="email" required />
+      <label for="">Senha: </label>
+      <input type="password" name="senha" required />
+      <button type="submit" class="btn-submit">
+        Cadastrar
+      </button>
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>
