@@ -1,29 +1,26 @@
 <%- include('partial/header') %>
 <main id="oferta">
   <div class="container">
+    <% carro.forEach(el => { %>
     <div class="box">
       <div class="banner-carro">
-        <img src="img/urus1.jpg" alt="" />
+        <img src=<%= el.imagem %> alt="" />
       </div>
       <div class="info">
-        <h1>Marca</h1>
+        <h1><%= el.marca %></h1>
         <span class="linha"></span>
         <div class="data">
-          <h2>Carro</h2>
-          <h2>2021</h2>
+          <h2><%= el.modelo %></h2>
+          <h2><%= el.ano %></h2>
         </div>
         <span class="linha"></span>
         <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum qui illum explicabo vel debitis non reiciendis molestias
-          repellendus architecto? Iure, eum? Unde quia autem debitis! Minus
-          dolorem eaque delectus.
+          <%= el.descricao %>
         </article>
         <span class="linha"></span>
         <div class="detalhes">
           <div class="valor">
-            <h1>R$350</h1>
-            <span class="linha"></span>
+            <h1>R$<%= el.valor %></h1>
             <p>dia</p>
           </div>
           <a href="#">
@@ -32,98 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="box">
-      <div class="banner-carro">
-        <img src="img/urus1.jpg" alt="" />
-      </div>
-      <div class="info">
-        <h1>Marca</h1>
-        <span class="linha"></span>
-        <div class="data">
-          <h2>Carro</h2>
-          <h2>2021</h2>
-        </div>
-        <span class="linha"></span>
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum qui illum explicabo vel debitis non reiciendis molestias
-          repellendus architecto? Iure, eum? Unde quia autem debitis! Minus
-          dolorem eaque delectus.
-        </article>
-        <span class="linha"></span>
-        <div class="detalhes">
-          <div class="valor">
-            <h1>R$350</h1>
-            <span class="linha"></span>
-            <p>dia</p>
-          </div>
-          <a href="#">
-            <input type="button" value="Detalhes" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="banner-carro">
-        <img src="img/urus1.jpg" alt="" />
-      </div>
-      <div class="info">
-        <h1>Marca</h1>
-        <span class="linha"></span>
-        <div class="data">
-          <h2>Carro</h2>
-          <h2>2021</h2>
-        </div>
-        <span class="linha"></span>
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum qui illum explicabo vel debitis non reiciendis molestias
-          repellendus architecto? Iure, eum? Unde quia autem debitis! Minus
-          dolorem eaque delectus.
-        </article>
-        <span class="linha"></span>
-        <div class="detalhes">
-          <div class="valor">
-            <h1>R$350</h1>
-            <p>/dia</p>
-          </div>
-          <a href="#">
-            <input type="button" value="Detalhes" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="banner-carro">
-        <img src="img/urus1.jpg" alt="" />
-      </div>
-      <div class="info">
-        <h1>Marca</h1>
-        <span class="linha"></span>
-        <div class="data">
-          <h2>Carro</h2>
-          <h2>2021</h2>
-        </div>
-        <span class="linha"></span>
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum qui illum explicabo vel debitis non reiciendis molestias
-          repellendus architecto? Iure, eum? Unde quia autem debitis! Minus
-          dolorem eaque delectus.
-        </article>
-        <span class="linha"></span>
-        <div class="detalhes">
-          <div class="valor">
-            <h1>R$350</h1>
-            <span class="linha"></span>
-            <p>dia</p>
-          </div>
-          <a href="#">
-            <input type="button" value="Detalhes" />
-          </a>
-        </div>
-      </div>
-    </div>
+    <% }) %>
   </div>
 </main>
 <%- include('partial/footer') %>

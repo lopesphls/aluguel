@@ -1,0 +1,23 @@
+<%- include('partial/header') %>
+<main id="cadastro">
+  <div class="box-cadastro">
+    <form action="/cadastrar" method="post">
+      <label for="">Marca: </label>
+      <input type="text" name="marca" required />
+      <label for="">Modelo: </label>
+      <input type="text" name="modelo" required />
+      <label for="">Ano: </label>
+      <input type="text" name="ano" required />
+      <label for="">Descrição: </label>
+      <input type="text" name="descricao" required />
+      <label for="">Valor: </label>
+      <input type="text" name="valor" required />
+      <label for="">Imagem: </label>
+      <input type="url" name="img" required />
+      <button type="submit" class="btn-submit">
+        Enviar
+      </button>
+    </form>
+  </div>
+</main>
+<%- include('partial/footer') %>
