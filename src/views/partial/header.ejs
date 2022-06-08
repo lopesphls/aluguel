@@ -14,18 +14,24 @@
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/oferta.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/cadastro.css" />
     <title>Locadora</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="/">Brand</a>
+        <a href="/" class="brand">RentCar</a>
         <div class="hamburguer">
           <ul>
             <li><a href="/">Inicio</a></li>
             <li><a href="/ofertas">Ofertas</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signin">Sign in</a></li>
+            <% if (login) { %>
+              <li><a href="/cadastro">Cadastro</a></li>
+              <li><a href="/logout">Sair</a></li>
+              <% } else { %>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signin">Sign in</a></li>
+              <% } %>
           </ul>
         </div>
       </nav>
